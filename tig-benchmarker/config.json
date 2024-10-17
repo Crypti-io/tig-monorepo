@@ -10,39 +10,39 @@
     "config": {
         "job_manager": {
             "satisfiability": {
-                "batch_size": 128
+                "batch_size": 4
             },
             "vehicle_routing": {
-                "batch_size": 128
+                "batch_size": 4
             },
             "knapsack": {
-                "batch_size": 128
+                "batch_size": 4
             },
             "vector_search": {
                 "batch_size": 4
             }
         },
         "precommit_manager": {
-            "max_unresolved_precommits": 5,
+            "max_unresolved_precommits": 1,
             "algo_selection": {
                 "satisfiability": {
                     "algorithm": "schnoing",
-                    "num_nonces": 1000,
+                    "num_nonces": 20,
                     "base_fee_limit": "10000000000000000"
                 },
                 "vehicle_routing": {
                     "algorithm": "clarke_wright",
-                    "num_nonces": 1000,
+                    "num_nonces": 20,
                     "base_fee_limit": "10000000000000000"
                 },
                 "knapsack": {
                     "algorithm": "dynamic",
-                    "num_nonces": 1000,
+                    "num_nonces": 20,
                     "base_fee_limit": "10000000000000000"
                 },
                 "vector_search": {
                     "algorithm": "optimal_ann",
-                    "num_nonces": 16,
+                    "num_nonces": 20,
                     "base_fee_limit": "10000000000000000"
                 }
             }
